@@ -1,0 +1,59 @@
+/* dashboard.component.css */
+body {
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #ff8a03;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .nav-links .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .user-icon {
+    height: 30px; /* Adjust as needed */
+    width: auto;
+    border-radius: 50%; /* Optional: Makes the icon circular */
+  }
+  
+  .user-name {
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  

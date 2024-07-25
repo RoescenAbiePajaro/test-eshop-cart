@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #ff8a03;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
