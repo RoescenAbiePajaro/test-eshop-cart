@@ -1,0 +1,69 @@
+header{
+  position: relative;
+  background: #ff8a03;
+  padding: 0;
+}
+
+a{
+  color: white;
+  font-weight: bold;
+}
+
+a:hover
+{
+  background-color: rgb(240, 101, 9);
+  color: white;
+  cursor: pointer;
+  
+}
+
+.container{
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo{
+  padding: 1rem;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  margin:0;
+  
+}
+
+ul a{
+  padding: 1rem;
+  display: inline-block;
+  color:#ffffff;
+}
+
+a span{
+  background: red;
+  color:#ffffff;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size:0.9rem;
+}
+
+.product-container{
+  position: relative;
+}
+
+.product{
+  position: absolute;
+  z-index:1;
+  display:none
+  
+}
+
+.product-container:hover .product{
+  background-color: rgb(240, 101, 9);
+  display: block;
+}
+.menu a{
+  width: 100%;
+  min-width: 8rem;
+}

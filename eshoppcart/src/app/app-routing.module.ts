@@ -5,6 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { canActivate, redirectUnauthorizedTo,redirectLoggedInTo } from '@angular/fire/auth-guard';
+import { HeaderComponent } from './header/header.component';
 
 
 const redirectToLogin = () => redirectUnauthorizedTo(['dashboard']);
@@ -16,9 +17,15 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent,...canActivate(redirectToLogin) },
   {path: 'productlist',component: ProductListComponent,...canActivate(redirectToLogin)},
   {
-    path: 'dashboard',
+    path: '',
     component: DashboardComponent,
     ...canActivate(redirectToLogin)
+  },
+
+  {
+    path: 'header',
+    component: HeaderComponent,
+    
   },
 ];
 

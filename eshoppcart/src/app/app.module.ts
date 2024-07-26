@@ -20,17 +20,23 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
-import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './header/header.component';
+import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    DashboardComponent,
-    NavbarComponent,
-    ProductListComponent,
-    ProductsComponent,
+    DashboardComponent, //home component
+    NavbarComponent, //header too
+    ProductListComponent, //productlist component property
+    HeaderComponent,
+    
     
   ],
   imports: [
@@ -46,7 +52,8 @@ import { ProductsComponent } from './products/products.component';
     MatError,
     MatSnackBarModule,
     FormsModule,
-
+    SharedModule,
+    HttpClientModule,
     
   ],
   providers: [
