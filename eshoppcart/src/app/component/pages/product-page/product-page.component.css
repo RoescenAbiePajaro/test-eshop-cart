@@ -1,0 +1,139 @@
+/* Container for the main content */
+.container {
+  display: flex;
+  flex-direction: column; /* Ensure column layout for mobile responsiveness */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  gap: 1rem; /* Adds spacing between items */
+}
+
+/* Ensures that direct children of the container have consistent width */
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+  width: 100%; /* Ensures elements use available width */
+}
+
+/* Image styling */
+img {
+  border-radius: 1rem; /* Adjusted for a less extreme rounded corner */
+  object-fit: cover;
+  height: auto; /* Ensures responsiveness */
+  max-height: 35rem;
+  width: 100%; /* Ensures image scales with container */
+  margin: 1rem;
+}
+
+/* Details section */
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+}
+
+/* Name styling */
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Favorite icon styling */
+.favorite {
+  color: #e72929;
+  font-size: 2.5rem;
+}
+
+/* Inactive favorite styling */
+.favorite.not {
+  color: grey;
+}
+
+/* Origins section */
+.origins {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+/* Styling for each origin item */
+.origins span {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border-radius: 2rem;
+  background-color: aliceblue;
+}
+
+/* Tags section */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem; /* Adds spacing between tags */
+}
+
+/* Tag link styling */
+.tags a {
+  background-color: #f0f0f0;
+  padding: 0.3rem 1rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: blue;
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Cook time section (commented out) */
+.cook-time {
+  margin-top: 1rem;
+}
+
+/* Styling for cook time text (commented out) */
+.cook-time span {
+  padding: 0.6rem 2rem 0.6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+}
+
+/* Price styling */
+.price {
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  color: green;
+}
+
+/* Price label */
+.price::before {
+  content: "Price: ";
+  color: darkgrey;
+}
+
+/* Button styling */
+button {
+  color: white;
+  background: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+  cursor: pointer; /* Makes cursor pointer by default */
+  transition: background-color 0.3s, opacity 0.3s; /* Smooth transition effects */
+}
+
+/* Button hover effect */
+button:hover {
+  background: #d62020; /* Slightly darker red for hover */
+  opacity: 0.9;
+}

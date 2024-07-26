@@ -1,1 +1,41 @@
-<p>product-page works!</p>
+<app-header></app-header>
+<div class="container">
+    <img [src]="product.imageUrl" [alt]="product.name"/>
+  
+      <div class="header">
+        <span class="name">
+          {{product.name}}
+        </span>
+        <!--<span class="favorite {{product.favorite? '': 'not'}}">❤</span>
+      </div>
+      <div class="rating"> -->
+      </div>
+  
+      <div class="origins">
+        <span *ngFor="let origin of product.origins">
+          {{origin}}
+        </span>
+      </div>
+  
+      <div class="tags">
+        <a *ngFor="let tag of product.tags" routerLink="/tag/{{tag}}">
+          {{tag}}
+        </a>
+      </div>
+  
+      <!--div class="cook-time">
+        <span>
+          Time to cook about <strong>{{product.cookTime}}</strong> minutes
+        </span>
+      </div-->
+  
+      <div class="price">
+        <span>
+          {{product.price | currency}}
+        </span>
+      </div>
+  
+      <button>Add To Cart</button>
+  
+    </div>
+  

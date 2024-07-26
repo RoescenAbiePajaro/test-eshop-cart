@@ -3,7 +3,7 @@ import { productsi } from "./app/shared/productsi"; // Food from Food.ts
 
 export const sample_products: productsi[] = [ //  const sample_foods: Food [] = [] {}  //
 {
-    id: '',
+    id: '1',
     name: 'Yellow Fabric Tshirt',
     price: 200,
     //cookTime:'40-50'//
@@ -15,7 +15,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 },
 
 {
-    id: '',
+    id: '2',
     name: 'USB Driver',
     price: 500,
     //cookTime:'40-50'//
@@ -27,7 +27,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 },
 
 {
-    id: '',
+    id: '3',
     name: 'Bracelet',
     price: 5000,
     //cookTime:'40-50'//
@@ -39,7 +39,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 },
 
 {
-    id: '',
+    id: '4',
     name: 'Ring',
     price: 2000,
     //cookTime:'40-50'//
@@ -50,7 +50,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     tags: ['Accesories'],
 },
 {
-    id: '',
+    id: '5',
     name: 'Toothbrush',
     price: 2000,
     //cookTime:'40-50'//
@@ -61,7 +61,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     tags: ['Hygiene'],
 },
 {
-    id: '',
+    id: '6',
     name: 'Soap',
     price: 2000,
     //cookTime:'40-50'//
@@ -72,7 +72,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     tags: ['Hygiene'],
 },
 {
-    id: '',
+    id: '7',
     name: 'Bottle Shampoo',
     price: 2000,
     //cookTime:'40-50'//

@@ -3,6 +3,7 @@
 <app-tags></app-tags>
 <!-- -->
 <ul>
+  
     <li *ngFor="let product of products"> <!-- products should be defined in home.ts -->
       <a routerLink="/product/{{product.id}}">
         <img [src]="product.imageUrl" [alt]="product.name"/> <!-- assuming all products are food -->
