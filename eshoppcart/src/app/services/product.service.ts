@@ -22,6 +22,10 @@ export class ProductService {
   gwtAllProductsByTag(tag:string):productsi[]{
     return tag == "All"?
     this.getAll():
-     this.getAll().filter(food => food.tags?.includes(tag));
+     this.getAll().filter(product => product.tags?.includes(tag));
+  }
+
+  getProductsById(productId:string):productsi{
+    return this.getAll().find(product => product.id == productId)?? new productsi();
   }
 }

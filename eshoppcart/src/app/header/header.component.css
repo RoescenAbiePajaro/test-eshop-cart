@@ -66,7 +66,6 @@ a span {
 
 .product-container:hover .product {
   display: block;
-  opacity: 1; /* Ensure the product is fully opaque */
 }
 
 .menu a {

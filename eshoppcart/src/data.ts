@@ -46,7 +46,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     //favorite: false,//
     //stars: 4.0,//
     origins: ['Made in France'],
-    imageUrl: 'Bottle-Shampoo.webp',
+    imageUrl: '1_1_8e957653-5f7f-4345-84ea-a1c9ae26f028_1600x.webp',
     tags: ['Accesories'],
 },
 {

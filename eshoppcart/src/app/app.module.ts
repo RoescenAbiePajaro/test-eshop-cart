@@ -26,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './component/pages/home/home.component';
 import { SearchComponent } from './component/partials/search/search.component';
 import { TagsComponent } from './component/partials/tags/tags.component';
+import { ProductPageComponent } from './component/pages/product-page/product-page.component';
 
 
 
@@ -38,7 +39,7 @@ import { TagsComponent } from './component/partials/tags/tags.component';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent,
     
     
   ],
