@@ -4,11 +4,12 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '',
     name: 'Yellow Fabric Tshirt',
-    price: 100,
+    price: 200,
     //cookTime:'40-50'//
     //favorite: false,//
-    //stars: 4.0//
+    //stars: 4.0,//
     imageUrl: 'a41c642f417551df48b038db763c302a.jpg_720x720q80.jpg',
+    origins: ['Made in America'],
     tags: ['Tshirt','Casual'],
 },
 
@@ -17,8 +18,9 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     name: 'USB Driver',
     price: 500,
     //cookTime:'40-50'//
-    //favorite: false,//
-    //stars: 4.0//
+    //favorite: false//
+    //stars: 4.0,//
+    origins: ['Made in China'],
     imageUrl: 'usb-driver.jpg',
     tags: ['Gadgets','Electronics'],
 },
@@ -26,10 +28,11 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '',
     name: 'Bracelet',
-    price: 50,
+    price: 5000,
     //cookTime:'40-50'//
     //favorite: false,//
-    //stars: 4.0//
+    //stars: 4.0,//
+    origins: ['Made in Thailand'],
     imageUrl: 'bracelet.jpg',
     tags: ['Aethetic','Accesories'],
 },
@@ -37,10 +40,44 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '',
     name: 'Bottle Shampoo',
-    price: 30,
+    price: 2000,
     //cookTime:'40-50'//
     //favorite: false,//
-    //stars: 4.0//
+    //stars: 4.0,//
+    origins: ['Made in France'],
+    imageUrl: 'Bottle-Shampoo.webp',
+    tags: ['Hygiene','Bath'],
+},
+{
+    id: '',
+    name: 'Bottle Shampoo',
+    price: 2000,
+    //cookTime:'40-50'//
+    //favorite: false,//
+    //stars: 4.0,//
+    origins: ['Made in France'],
+    imageUrl: 'Bottle-Shampoo.webp',
+    tags: ['Hygiene','Bath'],
+},
+{
+    id: '',
+    name: 'Bottle Shampoo',
+    price: 2000,
+    //cookTime:'40-50'//
+    //favorite: false,//
+    //stars: 4.0,//
+    origins: ['Made in France'],
+    imageUrl: 'Bottle-Shampoo.webp',
+    tags: ['Hygiene','Bath'],
+},
+{
+    id: '',
+    name: 'Bottle Shampoo',
+    price: 2000,
+    //cookTime:'40-50'//
+    //favorite: false,//
+    //stars: 4.0,//
+    origins: ['Made in France'],
     imageUrl: 'Bottle-Shampoo.webp',
     tags: ['Hygiene','Bath'],
 },

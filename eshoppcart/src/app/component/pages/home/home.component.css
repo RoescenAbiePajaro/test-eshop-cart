@@ -1,0 +1,66 @@
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    height: 22.5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none; /* Ensure links don't have underlines */
+    color: inherit; /* Inherit text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better depth */
+}
+
+li a:hover {
+    opacity: 0.9;
+}
+
+li a img {
+    object-fit: cover;
+    height: 14.5rem; /* Adjusted the unit to px for clarity */
+    width: 100%; /* Ensure image takes full width */
+}
+
+.content {
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origins span {
+    background-color: #f0f0f0;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff4500; /* Example color, adjust as needed */
+}

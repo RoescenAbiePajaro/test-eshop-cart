@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './component/pages/home/home.component';
 
 
 
@@ -35,7 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent,
+    HeaderComponent, HomeComponent,
     
     
   ],

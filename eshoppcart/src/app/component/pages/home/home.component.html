@@ -1,0 +1,40 @@
+<ul>
+    <li *ngFor="let product of products"> <!-- products should be defined in home.ts -->
+      <a routerLink="/product/{{product.id}}">
+        <img [src]="product.imageUrl" [alt]="product.name" class=""/> <!-- assuming all products are food -->
+        <div class="content">
+          <div class="name">
+            {{product.name}}
+          </div>
+          <!-- Uncomment if you want to use favorite indicator and stars
+          <span class="favorite{{product.favorite ? '' : ' not'}}">
+          </span>
+          <div class="stars"> 
+          </div>
+          -->
+  
+          <div class="product-item-footer">
+            <div class="origins">
+              <span *ngFor="let origin of product.origins">
+                {{origin}}
+              </span>
+            </div>
+  
+            <!-- Uncomment if you have delivery time
+            <div class="delivery-time">
+              <span></span>
+              {{product.deliverytime}}
+            </div>
+            -->
+          </div>
+  
+          <div class="price">
+            <span>
+              {{product.price | currency}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  

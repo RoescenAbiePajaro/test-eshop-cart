@@ -12,6 +12,7 @@ a{
 a:hover
 {
   background-color: rgb(240, 101, 9);
+  
   color: white;
   cursor: pointer;
   
@@ -31,6 +32,7 @@ ul{
   display: flex;
   list-style: none;
   margin:0;
+  opacity: 0.9;
   
 }
 

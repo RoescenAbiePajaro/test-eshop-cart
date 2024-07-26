@@ -9,7 +9,7 @@ export class ProductService {
 
   constructor() { }
 
-  getAll():productsi[]{  // Food from Food.ts which is productsi
-    return sample_products;
+  getAll():productsi[]{  // Food from Food.ts which is productsi.ts
+    return sample_products; //sa data.ts itong sample_products
   }    
 }
