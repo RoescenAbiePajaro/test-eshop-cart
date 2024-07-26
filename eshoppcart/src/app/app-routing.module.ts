@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'search/:searchTerm',component:HomeComponent},
   {path:'tag/:tag',component:HomeComponent},
-  {path: 'product/:id', component:ProductPageComponent},
+  { path: 'product/:id', component: ProductPageComponent },
 
   { path: '', pathMatch: 'full' ,component:ProductListComponent},
   { path: 'login', component: LoginComponent},

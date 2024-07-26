@@ -5,7 +5,7 @@
 <ul>
     <li *ngFor="let product of products"> <!-- products should be defined in home.ts -->
       <a routerLink="/product/{{product.id}}">
-        <img [src]="product.imageUrl" [alt]="product.name" class=""/> <!-- assuming all products are food -->
+        <img [src]="product.imageUrl" [alt]="product.name"/> <!-- assuming all products are food -->
         <div class="content">
           <div class="name">
             {{product.name}}
