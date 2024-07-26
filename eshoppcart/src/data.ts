@@ -1,6 +1,5 @@
 import { Tag } from "./app/shared/Tag";
 import { productsi } from "./app/shared/productsi"; // Food from Food.ts
-
 export const sample_products: productsi[] = [ //  const sample_foods: Food [] = [] {}  //
 {
     id: '1',

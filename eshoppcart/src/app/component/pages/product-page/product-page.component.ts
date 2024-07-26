@@ -4,7 +4,7 @@ import { ProductService } from '../../../services/product.service';
 import { productsi } from '../../../shared/productsi';
 import { CartService } from '../../../services/cart.service';
 
-//this.product
+//this.product // Food-Page
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',

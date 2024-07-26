@@ -8,7 +8,6 @@ import { Tag } from '../shared/Tag';
 })
 export class ProductService {
 
-
   constructor() { }
 
   getAll():productsi[]{  // Food from Food.ts which is productsi.ts
