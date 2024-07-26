@@ -15,6 +15,9 @@ constructor(private productService:ProductService, activatedRoute:ActivatedRoute
 activatedRoute.params.subscribe((params) =>{
 if(params.searchTerm)
 this.products = this.productService.getAllProductsBySearchTerm(params.searchTerm);
+
+else if (params.tag)
+this.products = this.productService.gwtAllProductsByTag(params.tag);
 else this.products = productService.getAll();
 }) //iniba yung sa tsconfig.json imbes true ginawang false//
 

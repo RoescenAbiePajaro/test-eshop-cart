@@ -11,16 +11,17 @@ import { HomeComponent } from './component/pages/home/home.component';
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'search/:searchTerm',component:HomeComponent},
+  {path:'tag/:tag',component:HomeComponent},
 
   { path: '', pathMatch: 'full' ,component:ProductListComponent},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
+
   {
     path: 'dashboard',
     component: DashboardComponent,
   },
 
- 
 
   
 ];
