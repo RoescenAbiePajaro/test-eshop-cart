@@ -12,7 +12,7 @@ export class ProductService {
   constructor() { }
 
   getAll():productsi[]{  // Food from Food.ts which is productsi.ts
-    return sample_products; //sa data.ts itong sample_products
+    return sample_products; //sa data.ts itong sample_products // walang no products
   }    
   getAllProductsBySearchTerm(searchTerm:string){
     return this.getAll().filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
