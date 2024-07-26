@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { productsi } from '../../../shared/productsi';
 import { ProductService, } from '../../../services/product.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,14 @@ import { ProductService, } from '../../../services/product.service';
 export class HomeComponent implements OnInit {
 
   products:productsi[] = []; //products to this.products
-constructor(private productService:ProductService){  //balik ka sa line na toh
-this.products = productService.getAll();
+constructor(private productService:ProductService, activatedRoute:ActivatedRoute){  //balik ka sa line na toh
+activatedRoute.params.subscribe((params) =>{
+if(params.searchTerm)
+this.products = this.productService.getAllProductsBySearchTerm(params.searchTerm);
+else this.products = productService.getAll();
+}) //iniba yung sa tsconfig.json imbes true ginawang false//
+
+  
 }
 ngOnInit(): void {
     

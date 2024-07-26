@@ -1,4 +1,6 @@
 <app-header></app-header>
+<app-search></app-search>
+<!-- -->
 <ul>
     <li *ngFor="let product of products"> <!-- products should be defined in home.ts -->
       <a routerLink="/product/{{product.id}}">

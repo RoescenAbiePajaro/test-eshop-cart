@@ -24,6 +24,7 @@ import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './component/pages/home/home.component';
+import { SearchComponent } from './component/partials/search/search.component';
 
 
 
@@ -36,7 +37,7 @@ import { HomeComponent } from './component/pages/home/home.component';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent,
+    HeaderComponent, HomeComponent, SearchComponent,
     
     
   ],

@@ -9,7 +9,8 @@ import { HomeComponent } from './component/pages/home/home.component';
 
 
 const routes: Routes = [
-
+  {path:'home',component:HomeComponent},
+  {path:'search/:searchTerm',component:HomeComponent},
 
   { path: '', pathMatch: 'full' ,component:ProductListComponent},
   { path: 'login', component: LoginComponent},
@@ -19,8 +20,7 @@ const routes: Routes = [
     component: DashboardComponent,
   },
 
-  {path:'home',component:HomeComponent},
-  {path:'search/:searchTerm',component:HomeComponent},
+ 
 
   
 ];
