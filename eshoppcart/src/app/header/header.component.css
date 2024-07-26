@@ -21,10 +21,19 @@ a:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Center items vertically */
 }
 
 a.logo {
   padding: 1rem;
+  display: flex; /* Use flex to align the logo and image horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.logo-image {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  margin-right: 0.5rem; /* Space between image and text */
 }
 
 ul {
@@ -66,6 +75,12 @@ a span {
 
 .product-container:hover .product {
   display: block;
+}
+
+.logout-image {
+  width: 16px; /* Set the desired width */
+  height: 16px; /* Set the desired height */
+  margin-right: 0.5rem; /* Space between image and text */
 }
 
 .menu a {

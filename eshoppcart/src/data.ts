@@ -5,7 +5,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '1',
     name: 'Yellow Fabric Tshirt',
-    price: 200,
+    price: 30,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -17,7 +17,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '2',
     name: 'USB Driver',
-    price: 500,
+    price: 8.55,
     //cookTime:'40-50'//
     //favorite: false//
     //stars: 4.0,//
@@ -29,7 +29,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '3',
     name: 'Bracelet',
-    price: 5000,
+    price: 51.31,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -41,7 +41,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '4',
     name: 'Ring',
-    price: 2000,
+    price: 100,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -52,7 +52,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '5',
     name: 'Toothbrush',
-    price: 2000,
+    price: 0.17,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -63,7 +63,7 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
 {
     id: '6',
     name: 'Soap',
-    price: 2000,
+    price: 0.15,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -72,9 +72,9 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     tags: ['Hygiene'],
 },
 {
-    id: '7',
+    id: '51.31',
     name: 'Bottle Shampoo',
-    price: 2000,
+    price: 5.41,
     //cookTime:'40-50'//
     //favorite: false,//
     //stars: 4.0,//
@@ -82,14 +82,27 @@ export const sample_products: productsi[] = [ //  const sample_foods: Food [] = 
     imageUrl: 'Bottle-Shampoo.webp',
     tags: ['Hygiene'],
 },
+{
+    id: '8',
+    name: 'Red T-Shirt',
+    price: 60,
+    //cookTime:'40-50'//
+    //favorite: false,//
+    //stars: 4.0,//
+    origins: ['Made in China'],
+    imageUrl: 'red shirt.jpg',
+    tags: ['Tshirt','Casual'],
+},
+
+
 ]   
 
 export const sample_tags:Tag[] = [
     {name: 'All', count: 7},
     {name: 'Hygiene', count: 3},
     {name: 'Accesories', count: 2},
-    {name: 'Tshirt', count:1 },
-    {name: 'Casual', count:1 },
+    {name: 'Tshirt', count:2 },
+    {name: 'Casual', count:2 },
     {name: 'Gadgets', count:1 },
     {name: 'Electronics', count:1 },
 

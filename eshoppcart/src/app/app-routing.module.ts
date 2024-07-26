@@ -6,18 +6,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { ProductPageComponent } from './component/pages/product-page/product-page.component';
-
-
+import { CanActivate } from '@angular/router';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'search/:searchTerm',component:HomeComponent},
   {path:'tag/:tag',component:HomeComponent},
   { path: 'product/:id', component: ProductPageComponent },
-
   { path: '', pathMatch: 'full' ,component:ProductListComponent},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
+  
 
   {
     path: 'dashboard',
