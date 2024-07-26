@@ -87,7 +87,7 @@ export class SignupComponent implements OnInit {
         });
         
         console.log('Signup successful');
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/home']);
       },
       error: (err) => {
         // Close the loading snackbar
