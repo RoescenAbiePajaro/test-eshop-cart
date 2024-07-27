@@ -28,6 +28,7 @@ import { SearchComponent } from './component/partials/search/search.component';
 import { TagsComponent } from './component/partials/tags/tags.component';
 import { ProductPageComponent } from './component/pages/product-page/product-page.component';
 import { CartPageComponent } from './component/pages/cart-page/cart-page.component';
+import { TitleComponent } from './component/partials/title/title.component';
 
 
 
@@ -40,7 +41,7 @@ import { CartPageComponent } from './component/pages/cart-page/cart-page.compone
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent,
     
     
   ],

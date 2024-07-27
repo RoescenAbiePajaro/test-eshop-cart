@@ -20,9 +20,12 @@ export class ProductPageComponent implements OnInit {
     })
   }
   ngOnInit(): void {
+    
   }
-  addToCart(){
+  addToCart(): void{
     this.cartService.addToCart(this.product);
     this.router.navigateByUrl('/cart-page');
   }
 }
+
+

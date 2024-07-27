@@ -1,10 +1,10 @@
 import { productsi } from "./productsi";
 
-export class CartItem{
-    constructor(product:productsi){
-        this.product = product;
+export class CartItem {
+    quantity: number = 1;
+    price: number;
+
+    constructor(public product: productsi) {
+        this.price = this.product.price;
     }
-    product!:productsi;
-    quantity:number = 1;
-    price: number = this.product.price;
 }

@@ -13,7 +13,7 @@ export class CartService {
   constructor() { }
 
   addToCart(product:productsi):void{
-    let cartItem  = this.cart.items.find(item => item.product.id == product.id);
+    let cartItem  = this.cart.items.find(item => item.product.id === product.id);
     if(cartItem)
     return;
 
@@ -42,11 +42,10 @@ getCartObservable():Observable<Cart>{
   return this.cartSubject.asObservable();
 }
 private setCartToLocalStorage():void{
-  this.cart.totalPrice = this.cart.items
-  .reduce((prevSum, currentItem) => prevSum + currentItem.price, 0);
+  this.cart.totalPrice = this.cart.items.reduce((prevSum, currentItem) => prevSum + currentItem.price, 0);
   this.cart.totalCount = this.cart.items.reduce((prevSum, currentItem) => prevSum + currentItem.quantity, 0);
   
-  const cartJson =  JSON.stringify(this.cart);
+  const cartJson =JSON.stringify(this.cart);
   localStorage.setItem('Cart',cartJson);
   this.cartSubject.next(this.cart);
 }
@@ -54,4 +53,6 @@ private getCartFromLocalStorage():Cart{
   const cartJson = localStorage.getItem('Cart');
   return cartJson? JSON.parse(cartJson): new Cart();
 }
+
 }
+

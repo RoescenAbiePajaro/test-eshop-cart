@@ -23,6 +23,6 @@ ngOnInit(): void{
   }
   changeQuantity(cartItem:CartItem,quantityInString:string){
     const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.product.id, quantity)
+    this.cartService.changeQuantity(cartItem.product.id, quantity);
   }
 }
