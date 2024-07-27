@@ -31,6 +31,7 @@ import { CartPageComponent } from './component/pages/cart-page/cart-page.compone
 import { TitleComponent } from './component/partials/title/title.component';
 import { NvbarComponent } from './component/nvbar/nvbar.component';
 import { UpComponent } from './component/partials/up/up.component';
+import { SignupNavbarComponent } from './component/signup-navbar/signup-navbar.component';
 
 
 
@@ -43,7 +44,7 @@ import { UpComponent } from './component/partials/up/up.component';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent,
     
     
   ],

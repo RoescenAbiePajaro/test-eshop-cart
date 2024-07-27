@@ -29,13 +29,13 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 4px; /* Rounded corners */
-  background-color: #fa780d; /* Button background color */
+  background-color: #ff8a03; /* Button background color */
   color: white; /* Text color */
   cursor: pointer; /* Change cursor to pointer */
   transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 button:hover {
-  background-color: #fa780d; /* Darker color on hover */
-  
+  background-color: rgb(240, 101, 9); /* Darker color on hover */
+  transform: scale(1.05);
 }

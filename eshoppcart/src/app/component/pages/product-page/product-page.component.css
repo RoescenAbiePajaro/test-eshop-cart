@@ -51,16 +51,6 @@ img {
   font-weight: bold;
 }
 
-/* Favorite icon styling */
-.favorite {
-  color: #e72929;
-  font-size: 2rem; /* Reduced font size */
-}
-
-/* Inactive favorite styling */
-.favorite.not {
-  color: grey;
-}
 
 /* Origins section */
 .origins {
@@ -88,11 +78,11 @@ img {
 /* Tag link styling */
 .tags a {
   background-color: #f0f0f0;
-  padding: 0.2rem 0.8rem; /* Reduced padding */
-  border-radius: 8rem; /* Reduced border radius */
-  font-weight: 500; /* Slightly reduced font weight */
-  color: blue;
-  text-decoration: none; /* Removes underline from links */
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color:rgb(0, 0, 0);
 }
 
 /* Cook time section (commented out) */
@@ -109,9 +99,9 @@ img {
 
 /* Price styling */
 .price {
-  font-size: 1.5rem; /* Reduced font size */
-  margin: 1.5rem 1.5rem 1.5rem 0; /* Reduced margin */
-  color: green;
+  font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff4500;
 }
 
 /* Price label */
@@ -122,7 +112,7 @@ img {
 
 button {
   color: white;
-  background: #e72929;
+  background: #ff8a03;
   border: none;
   font-size: 0.9rem; /* Slightly reduced font size */
   padding: 0.8rem 1.5rem; /* Adjusted padding */
@@ -134,8 +124,8 @@ button {
 
 /* Button hover effect */
 button:hover {
-  background: #d62020; /* Slightly darker red for hover */
-  opacity: 0.9;
+  background:  rgb(240, 101, 9); /* Slightly darker red for hover */
+  transform: scale(1.05);
 }
 
 /* Responsive button adjustments */

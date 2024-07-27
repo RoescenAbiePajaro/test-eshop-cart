@@ -14,4 +14,9 @@ div{
     border-radius: 10rem;
     font-weight: 600;
     color:rgb(0, 0, 0);
+    
+    }
+
+    div :hover{
+        transform: scale(1.05);
     }

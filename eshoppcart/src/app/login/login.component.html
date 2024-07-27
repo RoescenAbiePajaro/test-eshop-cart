@@ -1,6 +1,5 @@
 <app-navbar></app-navbar>
-  <div class="content">
-
+<div class="content">
   <div class="form-container">
     <div class="flex flex-col min-h-full justify-center px-3 py-10 lg:px-8">
       <div class="sm:mx-auto sm:w-full sm:max-w-sm text-center">
@@ -9,51 +8,55 @@
         <h2 class="mt-2 text-2xl font-bold leading-9 tracking-tight text-gray-900">Log In To Your Account</h2>
       </div>
       
-
       <div class="mt-3 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+          <div class="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
+            <label class="block w-full text-sm font-medium leading-6 text-gray-900">Email</label>
+            <input 
+              required 
+              class="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6" 
+              placeholder="" 
+              formControlName="email" 
+              type="email"
+            />
+          </div>
+          <mat-error *ngIf="email?.errors?.['required']" class="text-sm font-medium text-orange-500">
+            *Email is required.
+          </mat-error>
+          <mat-error *ngIf="email?.errors?.['email']" class="text-sm font-medium text-orange-500">
+            *Please enter a valid email address.
+          </mat-error>
 
-<form [formGroup]="loginForm" (ngSubmit)="submit()">
+          <div class="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
+            <label class="block w-full text-sm font-medium leading-6 text-gray-900 ">Password</label>
+            <input 
+              required 
+              class="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6" 
+              placeholder="" 
+              formControlName="password" 
+              type="password"
+            />
+          </div>
+          <mat-error *ngIf="password?.errors?.['required']" class="text-sm font-medium text-orange-500">
+            *Password is required.
+          </mat-error>
+          <mat-error *ngIf="password?.errors?.['password']" class="text-sm font-medium text-orange-500">
+            Invalid password.
+          </mat-error>
 
-  <div class="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
-    <label class="block w-full text-sm font-medium leading-6 text-gray-900 blink-animation">Email</label>
-  <input required class="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"placeholder="" formControlName="email" type="email"/>
+          <div class="flex justify-center mt-5">
+            <button 
+              type="submit" 
+              class="flex w-full justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-orange-700">
+              Login
+            </button>
+          </div>
+          <p class="mt-5 text-center text-sm text-gray-500">
+            Don't Have Any Account? 
+            <a href="/signup" class="font-semibold leading-6 text-orange-500 hover:text-yellow-500">Register Now!</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-
-<mat-error
-*ngIf="email?.errors?.['required']" class="text-sm font-medium text-orange-500">*Email is required.
-</mat-error>
-
-<mat-error
-  *ngIf="email?.errors?.['email']" class="text-sm font-medium text-orange-500">*Please enter a valid email address.
-</mat-error>
-
-
-<div class="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
-  <label class="block w-full text-sm font-medium leading-6 text-gray-900 blink-animation">Password</label>
-<input required class="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"placeholder="" formControlName="password" type="password"/>
-</div>
-  <mat-error>
-  <div *ngIf="password?.errors?.['required']" class="text-sm font-medium text-orange-500 ">*Password is required.</div>
-</mat-error>
-  <mat-error>
-  <div *ngIf="password?.errors?.['password']" class="text-sm font-medium text-orange-500">Invalid password.</div>
-</mat-error>
-
-<div class="flex justify-center mt-5">
-  <button type="submit" class="flex w-full justify-center rounded-md bg-yellow-400 px-3 
-  py-1.5 text-sm font-semibold leading-6 text-white  hover:bg-orange-700 ">
-    Login
-  </button>
-</div>
-<p class="mt-5 text-center text-sm text-gray-500">
-  Dont Have Any Account? 
-  <a href="/signup" class="font-semibold leading-6 text-orange-500 hover:text-yellow-500">Register Now!</a>
-</p>
-
-</form>
-
-</div>
-</div>
- 
-
-

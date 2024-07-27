@@ -8,13 +8,13 @@ a {
   color: white;
   font-weight: bold;
   text-decoration: none; /* Ensure links don't have underlines */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 a:hover {
-  background-color: rgb(240, 101, 9);
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .container {
@@ -47,8 +47,15 @@ ul a {
   padding: 1rem;
   display: inline-block;
   color: #ffffff;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
+
+ul a:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 
 .product-container {
   position: relative;
@@ -59,10 +66,9 @@ ul a {
   z-index: 1;
   display: none;
   background-color: rgb(240, 101, 9); /* Ensure background color is set */
-  padding: 1rem; /* Add some padding for better appearance */
-  border-radius: 0.5rem; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  padding: 0.5rem; /* Reduced padding */
+  border-radius: 0.25rem; /* Smaller rounded corners */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow */
 }
 
 .product-container:hover .product {
@@ -76,7 +82,7 @@ ul a {
 }
 
 .menu a {
-  width: 100%;
+  width: 1rem;
   min-width: 8rem;
 }
 
@@ -84,4 +90,3 @@ ul a {
   width: 24px; /* Adjust size as needed */
   height: auto;
 }
-
