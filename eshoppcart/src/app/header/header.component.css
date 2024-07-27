@@ -50,14 +50,6 @@ ul a {
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-a span {
-  background: red;
-  color: #ffffff;
-  padding: 0.1rem 0.45rem;
-  border-radius: 100rem;
-  font-size: 0.9rem;
-}
-
 .product-container {
   position: relative;
 }
@@ -87,3 +79,9 @@ a span {
   width: 100%;
   min-width: 8rem;
 }
+
+.cart-icon {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+}
+

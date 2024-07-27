@@ -11,6 +11,9 @@ import { CartService } from '../../../services/cart.service';
   styleUrl: './product-page.component.css'
 })
 export class ProductPageComponent implements OnInit {
+Back() {
+throw new Error('Method not implemented.');
+}
   product!:productsi;
   constructor(activatedRoute:ActivatedRoute, productService:ProductService,
     private cartService:CartService,private router: Router){

@@ -29,6 +29,8 @@ import { TagsComponent } from './component/partials/tags/tags.component';
 import { ProductPageComponent } from './component/pages/product-page/product-page.component';
 import { CartPageComponent } from './component/pages/cart-page/cart-page.component';
 import { TitleComponent } from './component/partials/title/title.component';
+import { NvbarComponent } from './component/nvbar/nvbar.component';
+import { UpComponent } from './component/partials/up/up.component';
 
 
 
@@ -41,7 +43,7 @@ import { TitleComponent } from './component/partials/title/title.component';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent,
     
     
   ],

@@ -1,9 +1,9 @@
 <app-header></app-header>
-
 <div class="container">
 <ul>
   <li *ngFor="let cartItem of cart.items">
     <div>
+      
       <img [src]="cartItem.product.imageUrl" [alt]="cartItem.product.name">
     </div>
     <div>

@@ -10,6 +10,7 @@ import { CartItem } from '../../../shared/CartItem';
 })
 export class CartPageComponent implements OnInit {
   cart!:Cart;
+product: any;
   constructor(private cartService:CartService){
     this.cartService.getCartObservable().subscribe((cart)=>{
       this.cart = cart;

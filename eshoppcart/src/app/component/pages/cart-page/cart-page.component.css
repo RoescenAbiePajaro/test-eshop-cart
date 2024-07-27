@@ -135,7 +135,7 @@
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 80px) {
     button {
       font-size: 0.7rem; /* Even smaller font size on very small screens */
       padding: 0.5rem 1rem; /* Further adjusted padding */
