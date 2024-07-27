@@ -3,7 +3,7 @@ import { productsi } from '../shared/productsi';
 import { sample_products, sample_tags } from '../../data';
 import { Tag } from '../shared/Tag';
 
-@Injectable({
+@Injectable({ //ito yung food.service.ts
   providedIn: 'root'
 })
 export class ProductService {
