@@ -5,26 +5,27 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem;
-  gap: 1rem; /* Adds spacing between items */
+  margin: 2rem; /* Reduced margin */
+  gap: 0.5rem; /* Reduced spacing between items */
 }
 
 /* Ensures that direct children of the container have consistent width */
 .container > * {
-  min-width: 25rem;
-  max-width: 40rem;
+  min-width: 20rem; /* Reduced minimum width */
+  max-width: 35rem; /* Reduced maximum width */
   width: 100%; /* Ensures elements use available width */
 }
 
 /* Image styling */
 img {
-  border-radius: 1rem; /* Adjusted for a less extreme rounded corner */
   object-fit: cover;
-  height: auto; /* Ensures responsiveness */
-  max-height: 35rem;
-  width: 100%; /* Ensures image scales with container */
-  margin: 1rem;
+  height: 30rem; /* Reduced height */
+  width: 100%;
+  border-radius: 0.5rem; /* Adjust the value to control the roundness */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow with slight offset and blur */
 }
+
+
 
 /* Details section */
 .details {
@@ -32,9 +33,9 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1 0;
-  padding: 2rem;
+  padding: 1.5rem; /* Reduced padding */
   color: black;
-  margin-left: 1rem;
+  margin-left: 0.5rem; /* Reduced margin */
 }
 
 /* Header section */
@@ -46,14 +47,14 @@ img {
 
 /* Name styling */
 .name {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Reduced font size */
   font-weight: bold;
 }
 
 /* Favorite icon styling */
 .favorite {
   color: #e72929;
-  font-size: 2.5rem;
+  font-size: 2rem; /* Reduced font size */
 }
 
 /* Inactive favorite styling */
@@ -65,15 +66,15 @@ img {
 .origins {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem 0;
+  margin: 0.5rem 0; /* Reduced margin */
 }
 
 /* Styling for each origin item */
 .origins span {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  margin: 0.5rem 0.5rem 0.5rem 0;
-  border-radius: 2rem;
+  padding: 0.4rem; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  margin: 0.3rem 0.3rem 0.3rem 0; /* Reduced margin */
+  border-radius: 1.5rem; /* Reduced border radius */
   background-color: aliceblue;
 }
 
@@ -81,35 +82,35 @@ img {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem; /* Adds spacing between tags */
+  gap: 0.2rem; /* Reduced spacing between tags */
 }
 
 /* Tag link styling */
 .tags a {
   background-color: #f0f0f0;
-  padding: 0.3rem 1rem;
-  border-radius: 10rem;
-  font-weight: 600;
+  padding: 0.2rem 0.8rem; /* Reduced padding */
+  border-radius: 8rem; /* Reduced border radius */
+  font-weight: 500; /* Slightly reduced font weight */
   color: blue;
   text-decoration: none; /* Removes underline from links */
 }
 
 /* Cook time section (commented out) */
 .cook-time {
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Reduced margin-top */
 }
 
 /* Styling for cook time text (commented out) */
 .cook-time span {
-  padding: 0.6rem 2rem 0.6rem 0;
-  border-radius: 10rem;
-  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem; /* Reduced padding */
+  border-radius: 8rem; /* Reduced border radius */
+  font-size: 1.1rem; /* Reduced font size */
 }
 
 /* Price styling */
 .price {
-  font-size: 1.8rem;
-  margin: 2rem 2rem 2rem 0;
+  font-size: 1.5rem; /* Reduced font size */
+  margin: 1.5rem 1.5rem 1.5rem 0; /* Reduced margin */
   color: green;
 }
 
@@ -119,14 +120,13 @@ img {
   color: darkgrey;
 }
 
-/* Button styling */
 button {
   color: white;
   background: #e72929;
   border: none;
-  font-size: 1.2rem;
-  padding: 1rem;
-  border-radius: 10rem;
+  font-size: 0.9rem; /* Slightly reduced font size */
+  padding: 0.8rem 1.5rem; /* Adjusted padding */
+  border-radius: 8rem; /* Reduced border radius */
   outline: none;
   cursor: pointer; /* Makes cursor pointer by default */
   transition: background-color 0.3s, opacity 0.3s; /* Smooth transition effects */
@@ -136,4 +136,19 @@ button {
 button:hover {
   background: #d62020; /* Slightly darker red for hover */
   opacity: 0.9;
+}
+
+/* Responsive button adjustments */
+@media (max-width: 768px) {
+  button {
+    font-size: 0.8rem; /* Smaller font size on smaller screens */
+    padding: 0.6rem 1.2rem; /* Adjusted padding */
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 0.7rem; /* Even smaller font size on very small screens */
+    padding: 0.5rem 1rem; /* Further adjusted padding */
+  }
 }
