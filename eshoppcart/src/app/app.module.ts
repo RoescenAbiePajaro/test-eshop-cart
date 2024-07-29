@@ -34,6 +34,7 @@ import { SignupNavbarComponent } from './component/signup-navbar/signup-navbar.c
 import { HttpClientModule } from '@angular/common/http';
 import { ProducListNavbarComponent } from './component/produc-list-navbar/produc-list-navbar.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
+import { NotFoundComponent } from './component/partials/not-found/not-found.component';
 
 
 
@@ -45,7 +46,7 @@ import { CarouselComponent } from './component/carousel/carousel.component';
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, CarouselComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, CarouselComponent, NotFoundComponent,
     
     
   ],
