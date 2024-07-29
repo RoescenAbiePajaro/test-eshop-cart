@@ -1,34 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../../../services/product.service';
-import { productsi } from '../../../shared/productsi';
+import { productsi } from '../../../shared/productsi'; // Ensure this import is correct
 import { CartService } from '../../../services/cart.service';
 
-//this.product // Food-Page
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',
-  styleUrl: './product-page.component.css'
+  styleUrls: ['./product-page.component.css'] // Corrected property name
 })
 export class ProductPageComponent implements OnInit {
-Back() {
-throw new Error('Method not implemented.');
-}
-  product!:productsi;
-  constructor(activatedRoute:ActivatedRoute, productService:ProductService,
-    private cartService:CartService,private router: Router){
-    activatedRoute.params.subscribe((params) =>{
-      if(params.id)
-      this.product = productService.getProductsById(params.id);
-    })
-  }
+  product!: productsi; // Corrected type declaration
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private productService: ProductService,
+    private cartService: CartService,
+    private router: Router
+  ) {}
+
   ngOnInit(): void {
-    
+    this.activatedRoute.params.subscribe((params) => {
+      if (params.id) {
+        this.productService.getProductsById(params.id).subscribe((serverProduct) => {
+          this.product = serverProduct;
+        });
+      }
+    });
   }
-  addToCart(): void{
+
+  addToCart(): void {
     this.cartService.addToCart(this.product);
     this.router.navigateByUrl('/cart-page');
   }
 }
-
-

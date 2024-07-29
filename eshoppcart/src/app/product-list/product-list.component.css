@@ -1,41 +1,77 @@
-.navbar {
-  background-color: #ff8a03;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+/* Product List CSS */
+
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem;
+}
+
+li a {
+  height: 22.5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none; /* Ensure links don't have underlines */
+  color: inherit; /* Inherit text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better depth */
+}
+
+li a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+li a img {
+  object-fit: cover;
+  height: 14.5rem; /* Adjusted the unit to px for clarity */
+  width: 100%; /* Ensure image takes full width */
+}
+
+.content {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-item-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar .nav-links {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+.origins span {
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
+.price {
+  font-size: 1.1rem;
   font-weight: bold;
+  color: #ff4500; /* Example color, adjust as needed */
 }
 
-.navbar a:hover {
-  transform: scale(1.05);
-}
-
-.navbar img {
-  height: 30px; /* Adjust the height as needed */
-  width: auto;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-}

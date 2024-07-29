@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private authservice: AuthenticationService,
     private router: Router,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar, private userService: UserService, //add this
     ) {}
 
   ngOnInit(): void {}
@@ -49,6 +50,7 @@ export class LoginComponent implements OnInit {
       next: () => {
         this.loading = false;
         this.snackBar.open('Login successful!', 'Close', { duration: 2000 });
+        this.userService.setEmail(emailStr); // Store email
         this.router.navigate(['/home']);
       },
       error: (error) => {
@@ -56,7 +58,6 @@ export class LoginComponent implements OnInit {
         this.snackBar.open('Login failed. Please try again.', 'Close', { duration: 3000 });
         console.error('Login error:', error);
       }
-      
     });
   }
 }

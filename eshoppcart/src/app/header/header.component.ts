@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 searchText:string = '';
+email: string = '';
+
+constructor(private userService: UserService) {}
+
+  ngOnInit(): void {
+    this.email = this.userService.getEmail();
+  }
 }

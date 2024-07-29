@@ -1,31 +1,34 @@
 import { Injectable } from '@angular/core';
 import { productsi } from '../shared/productsi'; 
-import { sample_products, sample_tags } from '../../data';
 import { Tag } from '../shared/Tag';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { PRODUCTS_BY_SEARCH_URL, PRODUCTS_ID_URL, PRODUCTS_TAGS_URL, PRODUCTS_TAG_URL, PRODUCTS_URL } from '../shared/constants/urls';
 
-@Injectable({ //ito yung food.service.ts
+@Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getAll():productsi[]{  // Food from Food.ts which is productsi.ts
-    return sample_products; //sa data.ts itong sample_products // walang no products
-  }    
-  getAllProductsBySearchTerm(searchTerm:string){
-    return this.getAll().filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
-  }
-  getAllTags():Tag[]{
-    return sample_tags;
-  }
-  gwtAllProductsByTag(tag:string):productsi[]{
-    return tag == "All"?
-    this.getAll():
-     this.getAll().filter(product => product.tags?.includes(tag));
+  getAll(): Observable<productsi[]> {
+    return this.http.get<productsi[]>(PRODUCTS_URL);
   }
 
-  getProductsById(productId:string):productsi{
-    return this.getAll().find(product => product.id == productId)?? new productsi();
+  getAllProductsBySearchTerm(searchTerm: string): Observable<productsi[]> {
+    return this.http.get<productsi[]>(PRODUCTS_BY_SEARCH_URL + searchTerm);
+  }
+
+  getAllTags(): Observable<Tag[]> {
+    return this.http.get<Tag[]>(PRODUCTS_TAGS_URL );
+  }
+
+  getAllProductsByTag(tag: string): Observable<productsi[]> {
+    return tag === "All" ? this.getAll() : this.http.get<productsi[]>(PRODUCTS_TAG_URL + '/' + tag);
+  }
+
+  getProductsById(productId: string): Observable<productsi> {
+    return this.http.get<productsi>(PRODUCTS_ID_URL + productId);
   }
 }

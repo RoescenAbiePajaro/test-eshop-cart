@@ -22,7 +22,6 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
-import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './component/pages/home/home.component';
 import { SearchComponent } from './component/partials/search/search.component';
 import { TagsComponent } from './component/partials/tags/tags.component';
@@ -32,7 +31,9 @@ import { TitleComponent } from './component/partials/title/title.component';
 import { NvbarComponent } from './component/nvbar/nvbar.component';
 import { UpComponent } from './component/partials/up/up.component';
 import { SignupNavbarComponent } from './component/signup-navbar/signup-navbar.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProducListNavbarComponent } from './component/produc-list-navbar/produc-list-navbar.component';
+import { CarouselComponent } from './component/carousel/carousel.component';
 
 
 
@@ -44,7 +45,7 @@ import { SignupNavbarComponent } from './component/signup-navbar/signup-navbar.c
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent,
+    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, CarouselComponent,
     
     
   ],

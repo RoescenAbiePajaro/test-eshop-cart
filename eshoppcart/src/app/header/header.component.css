@@ -1,7 +1,16 @@
 header {
-  position: relative;
+  position: fixed; /* Fixes the header to the viewport */
+  top: 0; /* Aligns the header to the top */
+  left: 0; /* Aligns the header to the left */
+  width: 100%; /* Ensures the header spans the full width */
   background: #ff8a03;
   padding: 0;
+  z-index: 1000; /* Ensures the header is above other content */
+  display: flex;
+}
+
+body {
+  padding-top: 60px; /* Adds space at the top of the page to account for the fixed header */
 }
 
 a {
@@ -76,7 +85,7 @@ ul a:hover {
 }
 
 .logout-image {
-  width: 16px; /* Set the desired width */
+  width: 1-px; /* Set the desired width */
   height: 16px; /* Set the desired height */
   margin-right: 0.5rem; /* Space between image and text */
 }
@@ -87,6 +96,11 @@ ul a:hover {
 }
 
 .cart-icon {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+}
+
+.user-icon{
   width: 24px; /* Adjust size as needed */
   height: auto;
 }

@@ -1,18 +1,24 @@
 /* Container styling */
 div {
-
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 4rem;
   gap: 10px;
   padding: 9px;
+  
 }
+
+body {
+  margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+
 
 /* Input field styling */
 input[type="text"] {
   padding: 8px 12px;
   font-size: 16px;
-  border: 1px solid #fa780d;
+  border: 1px solid  #ff4500;        
   border-radius: 4px; /* Rounded corners */
   outline: none; /* Remove default focus outline */
   width: 200px; /* Set a width for the input field */
@@ -20,7 +26,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #fa780d; /* Change border color on focus */
+  border-color:  #ff4500; /* Change border color on focus */
 }
 
 /* Button styling */
@@ -29,13 +35,13 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 4px; /* Rounded corners */
-  background-color: #ff8a03; /* Button background color */
+  background-color:  #ff4500; /* Button background color */
   color: white; /* Text color */
   cursor: pointer; /* Change cursor to pointer */
   transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 button:hover {
-  background-color: rgb(240, 101, 9); /* Darker color on hover */
+  background-color:#e03b00(240, 101, 9); /* Darker color on hover */
   transform: scale(1.05);
 }

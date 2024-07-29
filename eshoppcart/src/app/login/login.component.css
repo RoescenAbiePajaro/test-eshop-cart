@@ -1,34 +1,18 @@
-html, body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensure it takes the full viewport height */
-  background-color: #f9f9f9;
+  height: 90vh; /* Ensure it takes the full viewport height */
+  overflow: hidden; /* Ensure no overflow */
 }
 
 .form-container {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 400px;
-  margin: auto;
-}
-
-.blink-animation {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+  max-width: 800px;
+  margin: 1rem;
+  overflow: hidden; /* Ensure no overflow */
 }
 
 input {
@@ -40,7 +24,7 @@ input {
 }
 
 button {
-  background-color: #f59e0b;
+  background-color: #ff4500;
   color: white;
   padding: 10px;
   border-radius: 4px;
@@ -50,17 +34,17 @@ button {
 }
 
 button:hover {
-  background-color: #f97316;
+  background-color: #e03b00;
   transform: scale(1.05);
 }
 
-a {
-  color: #f59e0b;
+a:hover {
+  color: #ff4500;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #facc15;
+  color: #e03b00;
   transform: scale(1.05);
 }
