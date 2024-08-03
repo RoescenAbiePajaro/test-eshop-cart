@@ -5,15 +5,5 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  private email: string = '';
-
-  setEmail(email: string) {
-    this.email = email;
-  }
-
-  getEmail(): string {
-    return this.email;
-  }
-  
+  constructor() { }
 }
-

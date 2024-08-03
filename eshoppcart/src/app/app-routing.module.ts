@@ -7,6 +7,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { ProductPageComponent } from './component/pages/product-page/product-page.component';
 import { CartPageComponent } from './component/pages/cart-page/cart-page.component';
+import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'dashboard', component: DashboardComponent,},
+  { path: 'checkout', component: CheckoutPageComponent,},
   { path: '', pathMatch: 'full', component: ProductListComponent },
   { path: '**', redirectTo: 'product-list' },
 

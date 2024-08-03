@@ -33,8 +33,10 @@ import { UpComponent } from './component/partials/up/up.component';
 import { SignupNavbarComponent } from './component/signup-navbar/signup-navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProducListNavbarComponent } from './component/produc-list-navbar/produc-list-navbar.component';
-import { CarouselComponent } from './component/carousel/carousel.component';
 import { NotFoundComponent } from './component/partials/not-found/not-found.component';
+import { OrderSummaryComponent } from './pages/order-summary/order-summary.component';
+import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
+
 
 
 
@@ -46,7 +48,11 @@ import { NotFoundComponent } from './component/partials/not-found/not-found.comp
     DashboardComponent, //home component
     NavbarComponent, //header too
     ProductListComponent, //productlist component property
-    HeaderComponent, HomeComponent, SearchComponent, TagsComponent, ProductPageComponent, CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, CarouselComponent, NotFoundComponent,
+    HeaderComponent, HomeComponent,
+     SearchComponent,
+      TagsComponent,
+       ProductPageComponent,
+        CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, NotFoundComponent, OrderSummaryComponent, CheckoutPageComponent,
     
     
   ],

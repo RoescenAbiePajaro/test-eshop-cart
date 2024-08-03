@@ -8,6 +8,3 @@ export const PRODUCTS_ID_URL = PRODUCTS_URL + '/';
 
 //SEARCH localhost:5000/api/products/4//
 
-
-
-

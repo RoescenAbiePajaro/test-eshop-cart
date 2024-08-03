@@ -8,7 +8,7 @@ import { from, Observable, catchError, map, switchMap } from 'rxjs';
 export class AuthenticationService {
 
 
-  constructor(private auth: Auth,) { }
+  constructor(private auth: Auth) { }
 
   login(email: string, password: string): Observable<UserCredential> {
     return from(signInWithEmailAndPassword(this.auth, email, password)).pipe(
