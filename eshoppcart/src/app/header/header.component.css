@@ -104,3 +104,28 @@ ul a:hover {
   width: 24px; /* Adjust size as needed */
   height: auto;
 }
+
+/* General Icon Styling */
+.cart-icon, .user-icon {
+  width: 24px; /* Adjust width as needed */
+  height: 24px; /* Adjust height to maintain aspect ratio */
+  display: inline-block; /* Ensures the icons align properly with text */
+  vertical-align: middle; /* Aligns icons with text */
+}
+
+/* Cart Count Styling */
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 10px; /* Adjust width as needed */
+  height: 10px;
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em; /* Adjust as needed to position correctly */
+  font-size: 0.8em;
+  position: absolute; /* Position it relative to the cart icon */
+  top: -0.5em; /* Adjust to position it correctly */
+  left: -0.5em; /* Adjust to position it correctly */
+}
+
+

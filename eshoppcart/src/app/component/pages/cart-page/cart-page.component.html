@@ -1,10 +1,8 @@
 <app-header></app-header>
-<app-not-found
-[visible]="!cart || !cart.items.length"
-notFoundMessage="Cart Page Is Empty"
-resetLinkText="Go To Homepage"
-></app-not-found>
 <div class="container">
+
+  <h3>Cart Details</h3>
+ 
   <ul>
     <li *ngFor="let cartItem of cart.items">
       <div>

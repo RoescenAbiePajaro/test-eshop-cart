@@ -36,6 +36,7 @@ import { ProducListNavbarComponent } from './component/produc-list-navbar/produc
 import { NotFoundComponent } from './component/partials/not-found/not-found.component';
 import { OrderSummaryComponent } from './pages/order-summary/order-summary.component';
 import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
+import { EnvironmentsComponent } from './environment/environments/environments.component';
 
 
 
@@ -52,7 +53,7 @@ import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-
      SearchComponent,
       TagsComponent,
        ProductPageComponent,
-        CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, NotFoundComponent, OrderSummaryComponent, CheckoutPageComponent,
+        CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, NotFoundComponent, OrderSummaryComponent, CheckoutPageComponent, EnvironmentsComponent,
     
     
   ],
@@ -71,6 +72,8 @@ import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-
     FormsModule,
     SharedModule,
     HttpClientModule,
+  
+  
     
   ],
   providers: [

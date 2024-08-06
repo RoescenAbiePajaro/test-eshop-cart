@@ -42,6 +42,13 @@
             <mat-error *ngIf="signUpForm.errors?.['passwordsMatchValidator']" class="text-sm font-medium text-orange-500">Passwords should match.</mat-error>
           </div>
 
+          <div class="mt-1">
+            <label class="block w-full text-sm font-medium leading-6 text-gray-900">Address</label>
+            <input required class="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6" 
+                   formControlName="address" type="text"/>
+            <mat-error *ngIf="address?.errors?.['required']" class="text-sm font-medium text-orange-500">*Address is required.</mat-error>
+          </div>
+          
           <div class="flex justify-center mt-5">
             <button type="submit" class="flex w-full justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white hover:bg-orange-700">
               Register

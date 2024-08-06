@@ -2,23 +2,31 @@ import { Component, OnInit } from '@angular/core';
 import { Cart } from '../../../shared/Cart';
 import { CartService } from '../../../services/cart.service';
 import { CartItem } from '../../../shared/CartItem';
+import { AuthenticationService } from '../../../services/authentication.service'; // Import AuthenticationService
 
 @Component({
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
-  styleUrls: ['./cart-page.component.css'] // Note: Corrected from 'styleUrl' to 'styleUrls'
+  styleUrls: ['./cart-page.component.css']
 })
 export class CartPageComponent implements OnInit {
   cart!: Cart;
-  product: any;
+  username: string = ''; // Add a variable for the username
 
-  constructor(private cartService: CartService) {
+  constructor(
+    private cartService: CartService,
+    private authService: AuthenticationService // Inject AuthenticationService
+  ) {
     this.cartService.getCartObservable().subscribe((cart) => {
       this.cart = cart;
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.authService.getCurrentUser().subscribe(user => {
+      this.username = user?.displayName || 'Guest'; // Fetch and display username
+    });
+  }
 
   removeFromCart(cartItem: CartItem) {
     this.cartService.removeFromCart(cartItem.product.id);

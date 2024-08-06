@@ -1,4 +1,3 @@
-
 <header>
   <div class="container">
     <a href="home" class="logo">
@@ -7,17 +6,22 @@
     </a>
     <nav>
       <ul>
-        <li class="product-container"> <!-- menu container -->
-          <a>User</a>
-          <div class="product"> <!-- menu -->
+        <li class="product-container">
+          <a>{{ userName }}</a> <!-- Display username -->
+          <div class="product">
             <a routerLink="/login">Logout</a>
           </div>
         </li>
         <li>
-          <a routerLink="/cart-page"><img src="shopping-cart.png" alt="Cart Icon" class="cart-icon"><span></span></a>
+          <a routerLink="/cart-page">
+            <span>{{ cartCount }}</span>
+            <img src="shopping-cart.png" alt="Cart Icon" class="cart-icon">
+          </a>
         </li>
-        <li class="back-button"> <!-- back button container -->
-          <a href="javascript:history.back()"><img src="return.png" alt="Back Icon" class="back-icon"></a>
+        <li class="back-button">
+          <a href="javascript:history.back()">
+            <img src="return.png" alt="Back Icon" class="back-icon">
+          </a>
         </li>
       </ul>
     </nav>

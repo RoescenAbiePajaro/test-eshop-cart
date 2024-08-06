@@ -8,3 +8,4 @@ imageUrl!: string;
 origins!: string[];
 //cookTime!:string;// idk this
 }
+

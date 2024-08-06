@@ -1,0 +1,47 @@
+<app-header></app-header>
+<table>
+    <tr>
+        <td colspan="5">
+            <h3>Order Details:</h3>
+            <h4>Customer Name: {{ name }}</h4>
+            <h4>Address: {{ address }}</h4> <!-- Display the address -->
+        </td>
+    </tr>
+    <tr *ngFor="let item of order.items">
+        <td>
+            <a routerLink="/product/{{item.product.id}}">
+                <img [src]="item.product.imageUrl" alt="Product Image">
+            </a>
+        </td>
+        <td>
+            <p>Product Name:</p>
+            {{item.product.name}}
+        </td>
+        <td>
+            <p>Price:</p>
+            {{item.product.price | currency}}
+        </td>
+        <td>
+            <p>Quantity:</p>
+            {{item.quantity}}
+        </td>
+        <td>
+            {{item.price | currency}}
+        </td>
+    </tr>
+    <tr class="total-row">
+        <td colspan="3"></td>
+        <td>
+            <strong>Total of Price:</strong>
+        </td>
+        <td>
+            <strong>{{order.totalPrice | currency}}</strong>
+        </td>
+    </tr>
+</table>
+<div class="buttons-container">
+    <button (click)="pay()">Place Order</button>
+</div>
+<div class="map">
+    <!-- Map content goes here -->
+</div>
