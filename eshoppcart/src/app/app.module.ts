@@ -37,6 +37,7 @@ import { NotFoundComponent } from './component/partials/not-found/not-found.comp
 import { OrderSummaryComponent } from './pages/order-summary/order-summary.component';
 import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
 import { EnvironmentsComponent } from './environment/environments/environments.component';
+import { PagenotfoundComponentComponent } from './component/pages/pagenotfound-component/pagenotfound-component.component';
 
 
 
@@ -53,7 +54,7 @@ import { EnvironmentsComponent } from './environment/environments/environments.c
      SearchComponent,
       TagsComponent,
        ProductPageComponent,
-        CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, NotFoundComponent, OrderSummaryComponent, CheckoutPageComponent, EnvironmentsComponent,
+        CartPageComponent, TitleComponent, NvbarComponent, UpComponent, SignupNavbarComponent, ProducListNavbarComponent, NotFoundComponent, OrderSummaryComponent, CheckoutPageComponent, EnvironmentsComponent, PagenotfoundComponentComponent,
     
     
   ],

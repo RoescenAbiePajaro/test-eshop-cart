@@ -6,23 +6,20 @@
     </a>
     <nav>
       <ul>
-        <li class="product-container">
-          <a>{{ userName }}</a> <!-- Display username -->
-          <div class="product">
-            <a routerLink="/login">Logout</a>
-          </div>
-        </li>
+       
         <li>
           <a routerLink="/cart-page">
-            <span>{{ cartCount }}</span>
             <img src="shopping-cart.png" alt="Cart Icon" class="cart-icon">
+            <span>{{ cartCount }}</span>
           </a>
-        </li>
-        <li class="back-button">
-          <a href="javascript:history.back()">
-            <img src="return.png" alt="Back Icon" class="back-icon">
-          </a>
-        </li>
+          <li class="product-container">
+            <a>{{ userName }}</a> <!-- Display username -->
+            <div class="product">
+              <a routerLink="/login">Logout</a>
+            </div>
+          </li>
+
+      
       </ul>
     </nav>
   </div>

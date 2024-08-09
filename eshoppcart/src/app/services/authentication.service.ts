@@ -7,9 +7,21 @@ import { User, authState } from '@angular/fire/auth';
   providedIn: 'root'
 })
 export class AuthenticationService {
+  isAuthenticated() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private auth: Auth) { }
+  isReturningUser(): boolean {
+    return localStorage.getItem('isReturningUser') === 'true';
+  }
 
+  // Set user as returning after successful login
+  setReturningUser(): void {
+    localStorage.setItem('isReturningUser', 'true');
+  }
+
+  
   getCurrentUser(): Observable<User | null> {
     return authState(this.auth); // Firebase authState
   }
@@ -26,8 +38,10 @@ export class AuthenticationService {
         console.error('Login error:', error.message);
         // Optionally, you can return a user-friendly error message here
         return of({} as UserCredential); // Handle login error gracefully
+        
       })
     );
+    
   }
 
   signUp(name: string, email: string, password: string): Observable<void> {

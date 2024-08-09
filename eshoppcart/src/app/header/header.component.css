@@ -7,12 +7,13 @@ header {
   padding: 0;
   z-index: 1000; /* Ensures the header is above other content */
   display: flex;
+  justify-content: space-between; /* Space out the items in the header */
+  align-items: center; /* Center items vertically */
 }
 
 body {
   padding-top: 60px; /* Adds space at the top of the page to account for the fixed header */
 }
-
 a {
   color: white;
   font-weight: bold;
@@ -27,7 +28,7 @@ a:hover {
 }
 
 .container {
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; /* Center items vertically */
@@ -49,6 +50,7 @@ ul {
   display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
   opacity: 0.9;
 }
 
@@ -64,7 +66,6 @@ ul a:hover {
   cursor: pointer;
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
-
 
 .product-container {
   position: relative;
@@ -100,15 +101,15 @@ ul a:hover {
   height: auto;
 }
 
-.user-icon{
+.user-icon {
   width: 24px; /* Adjust size as needed */
   height: auto;
 }
 
 /* General Icon Styling */
 .cart-icon, .user-icon {
-  width: 24px; /* Adjust width as needed */
-  height: 24px; /* Adjust height to maintain aspect ratio */
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height to maintain aspect ratio */
   display: inline-block; /* Ensures the icons align properly with text */
   vertical-align: middle; /* Aligns icons with text */
 }
@@ -119,13 +120,27 @@ ul a:hover {
   color: white;
   border-radius: 50%;
   width: 10px; /* Adjust width as needed */
-  height: 10px;
-  padding: 0.2em 0.6em;
+  height: 600px;
+  padding: 0.2em;
   margin-left: 0.2em; /* Adjust as needed to position correctly */
-  font-size: 0.8em;
-  position: absolute; /* Position it relative to the cart icon */
-  top: -0.5em; /* Adjust to position it correctly */
-  left: -0.5em; /* Adjust to position it correctly */
+  font-size: 0.5em;
+  position: fixed;/* Position it relative to the cart icon */
+  top: 1.em; /* Adjust to position it correctly */
+  right: -0.5em; /* Adjust to position it correctly */
 }
 
+/* Aligning the username and cart icon */
+.header-left {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
 
+.header-right {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  position: relative; /* Ensures the cart count can be positioned absolutely */
+}
+
+.cart-container {
+  position: relative; /* Relative to contain the cart count */
+}
